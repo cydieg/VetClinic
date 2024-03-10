@@ -59,7 +59,7 @@
 								<div class="row align-items-center justify-content-center">
 									<div class="col-md-12 col-lg-6 login-right">
 										<div class="login-header">
-											<h3>Register <a href="{{ route('adminRegister') }}">Are you an Admin?</a></h3>
+											<h3>Doctor Register <a href="{{ route('userLogin') }}">Not an Admin?</a></h3>
 										</div>
 										
 										<!-- Register Form -->
@@ -77,7 +77,7 @@
 												<label class="focus-label">Create Password</label>
 											</div>
 											<div class="text-right">
-												<a class="forgot-link" href="{{ route('userLogin') }}">Already have an account?</a>
+												<a class="forgot-link" href="{{ route('adminLogin') }}">Already have an account?</a>
 											</div>
 											<button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Signup</button>
 										</form>

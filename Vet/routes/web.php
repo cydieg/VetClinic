@@ -25,7 +25,11 @@ Route::get('/Services', [LandingPageController::class, 'Services'])->name('servi
 Route::get('/OurClinic', [LandingPageController::class, 'OurClinic'])->name('ourClinic');
 Route::get('/OurShop', [LandingPageController::class, 'OurShop'])->name('ourShop');
 
-//Authentication
-Route::get('/login', [AuthenticateController::class, 'login'])->name('login');
-Route::get('/register', [AuthenticateController::class, 'register'])->name('register');
+//Authentication User
+Route::get('/user-login', [AuthenticateController::class, 'userLogin'])->name('userLogin');
+Route::get('/user-register', [AuthenticateController::class, 'userRegister'])->name('userRegister');
 Route::get('/forgotPassword', [AuthenticateController::class, 'forgotPassword'])->name('forgotPassword');
+
+//Authentication Admin
+Route::get('/admin-register', [AuthenticateController::class, 'adminRegister'])->name('adminRegister');
+Route::get('/admin-login', [AuthenticateController::class, 'adminLogin'])->name('adminLogin');

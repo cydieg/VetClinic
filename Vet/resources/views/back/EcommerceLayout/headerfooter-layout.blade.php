@@ -79,7 +79,7 @@
               </form>
             </div>
             <div class="quote_btn-container  d-flex justify-content-center">
-              <button class="btn light-blue-btn" onclick="location.href='{{ route('login') }}'">Login</button>
+              <button class="btn light-blue-btn" onclick="location.href='{{ route('userLogin') }}'">Login</button>
             </div>
           </div>
         </nav>

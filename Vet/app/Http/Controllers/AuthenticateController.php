@@ -5,12 +5,12 @@ use Illuminate\Http\Request;
 
 class AuthenticateController extends Controller
 {
-    public function login()
+    public function userLogin()
     {
         return view('Authentication.UserLogin.loginUser');
     }
 
-    public function register()
+    public function userRegister()
     {
         return view('Authentication.UserLogin.registerUser');
     }
@@ -18,5 +18,15 @@ class AuthenticateController extends Controller
     public function forgotPassword()
     {
         return view('Authentication.ForgotPass');
+    }
+
+    public function adminLogin()
+    {
+        return view('Authentication.AdminLogin.adminLogin');
+    }
+
+    public function adminRegister()
+    {
+        return view('Authentication.AdminLogin.adminRegister');
     }
 }

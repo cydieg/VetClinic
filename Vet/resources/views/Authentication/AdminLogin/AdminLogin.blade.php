@@ -48,64 +48,44 @@
     <!-- end header section -->
 </body>
 <body>
-<div class="content">
-				<div class="container-fluid">
-					
-					<div class="row">
-						<div class="col-md-8 offset-md-2">
-								
-							<!-- Register Content -->
-							<div class="account-content">
-								<div class="row align-items-center justify-content-center">
-									<div class="col-md-12 col-lg-6 login-right">
-										<div class="login-header">
-											<h3>Register <a href="{{ route('adminRegister') }}">Are you an Admin?</a></h3>
-										</div>
-										
-										<!-- Register Form -->
-										<form action="https://dreamguys.co.in/demo/doccure/doctor-dashboard.html">
-											<div class="form-group form-focus">
-												<input type="text" class="form-control floating">
-												<label class="focus-label">Name</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="text" class="form-control floating">
-												<label class="focus-label">Mobile Number</label>
-											</div>
-											<div class="form-group form-focus">
-												<input type="password" class="form-control floating">
-												<label class="focus-label">Create Password</label>
-											</div>
-											<div class="text-right">
-												<a class="forgot-link" href="{{ route('userLogin') }}">Already have an account?</a>
-											</div>
-											<button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Signup</button>
-										</form>
-										<!-- /Register Form -->
-										
-									</div>
-								</div>
-							</div>
-							<!-- /Register Content -->
-								
-						</div>
-					</div>
-
-				</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 offset-md-4">
+                        <div class="col-md-12 col-lg-6 login-right">
+                            <div class="login-header">
+                                <h3>Login </h3>
+                            </div>
+                            <form action="https://dreamguys.co.in/demo/doccure/index.html">
+                                <div class="form-group form-focus">
+                                    <input type="email" class="form-control floating">
+                                    <label class="focus-label">Email</label>
+                                </div>
+                                <div class="form-group form-focus">
+                                    <input type="password" class="form-control floating">
+                                    <label class="focus-label">Password</label>
+                                </div>
+                                <div class="text-right">
+                                    <a class="forgot-link" href="{{ route('forgotPassword') }}">Forgot Password ?</a>
+                                </div>
+                                <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
+                                <div class="text-center dont-have">Don’t have an account? <a href="{{ route('adminLogin') }}">Register</a></div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+                <!-- /Login Tab Content -->
             </div>
         </div>
+    </div>
 
-    </body>
-
-<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     
-<!-- Bootstrap Core JS -->
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     
-<!-- Custom JS -->
-<script src="assets/js/script.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 <!-- doccure/login.html  30 Nov 2019 04:12:20 GMT -->
 </html>
